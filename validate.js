@@ -13,7 +13,7 @@
      */
 
     var defaults = {
-        messages: {
+        messages: window.vaidateErrorMessages || {
             required: 'The %s field is required.',
             matches: 'The %s field does not match the %s field.',
             "default": 'The %s field is still set to default, please change.',
