@@ -253,9 +253,9 @@
         if (this.errors.length > 0) {
             if (evt && evt.preventDefault) {
                 evt.preventDefault();
-            } else if (event) {
+            } else if (window.event) {
                 // IE uses the global event variable
-                event.returnValue = false;
+                window.event.returnValue = false;
             }
         }
 
